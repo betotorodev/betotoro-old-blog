@@ -324,6 +324,18 @@ body {
     -moz-font-feature-settings: "liga" on;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
 ::selection {
     text-shadow: none;
     background: #cbeafb;
