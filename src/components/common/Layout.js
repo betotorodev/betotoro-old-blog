@@ -5,7 +5,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Navigation } from '.'
-import config from '../../utils/siteConfig'
+// import config from '../../utils/siteConfig'
 
 // Styles
 import '../../styles/app.css'
@@ -89,7 +89,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2019 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
+                                Hecho con 💚 por <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Beto Toro</a> © 2020
                             </div>
                             <div className="site-foot-nav-right">
                                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />

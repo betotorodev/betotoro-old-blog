@@ -319,6 +319,7 @@ body {
     text-rendering: optimizeLegibility;
     background: #fff;
 
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on;
@@ -1044,7 +1045,6 @@ h6 {
 .site-foot-nav-right a:last-child {
     padding-right: 0;
 }
-
 
 /* Koenig Styles
 /* ---------------------------------------------------------- */
