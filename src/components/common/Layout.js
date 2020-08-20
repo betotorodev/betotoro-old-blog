@@ -35,36 +35,27 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
 
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                    <header className="site-head">
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
                                     <Link to="/">
                                         {site.logo ?
-                                            <div className="site-header-logo">
-                                                <img className="site-logo" src={site.logo} alt={site.title} />
-                                                <div className="site-header-brand">
-                                                    <h1>{site.title}</h1>
-                                                    <p>{site.description}</p>
-                                                </div>
+                                            <div className="site-header-brand">
+                                                <h1>{site.title}</h1>
+                                                <p>{site.description}</p>
                                             </div>
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Beto Toro - Twitter" /></a>}
-                                    <a className="site-nav-item" href="https://www.linkedin.com/in/beto-toro-859b811a6/" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/linkedin.svg" alt="Beto Toro - linkedin" /></a>
-                                    <a className="site-nav-item" href="https://github.com/beto-toro" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/github.svg" alt="Beto Toro - github" /></a>
-                                    {/* <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a> */}
+                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter-dark.png" alt="Beto Toro - Twitter" /></a>}
+                                    <a className="site-nav-item" href="https://www.linkedin.com/in/beto-toro-859b811a6/" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/linkedin-dark.png" alt="Beto Toro - linkedin" /></a>
+                                    <a className="site-nav-item" href="https://github.com/beto-toro" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/github-dark.png" alt="Beto Toro - github" /></a>
                                 </div>
                             </div>
-                            {/* { isHome ?
-                                <div className="site-banner">
-                                    <h1 className="site-banner-title">Beto Toro</h1>
-                                    <p className="site-banner-desc">{site.description}</p>
-                                </div> :
-                                null} */}
+
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
