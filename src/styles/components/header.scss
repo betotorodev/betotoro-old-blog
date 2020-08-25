@@ -1,0 +1,126 @@
+
+
+/* Header
+/* ---------------------------------------------------------- */
+
+.site-head {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--theme-light);
+    background-position: center;
+    background-size: cover;
+}
+
+.site-nav-item {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.site-nav-item:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.site-nav-icon {
+    height: 15px;
+    margin: -5px 0 0;
+}
+
+.site-logo {
+    height: 50px;
+}
+
+.site-mast {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-mast-left {
+    width: 50%;
+    border-bottom: 13px solid var(--theme-dark);
+}
+
+.site-header-brand {
+    display: flex;
+}
+
+.site-header-brand h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: var(--font-heavy);
+    color: var(--theme-dark);
+}
+
+.site-header-brand p {
+    margin: 0 0 0 44px;
+    font-weight: var(--font-medium);
+    color: var(--theme-dark);
+}
+
+.site-mast-right {
+    display: flex;
+    align-items: center;
+}
+
+.site-mast-right .site-nav-item:last-child {
+    padding-right: 0;
+}
+
+.site-banner {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10vw 0;
+    text-align: center;
+}
+
+.site-banner-title {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.3em;
+}
+
+.site-banner-desc {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 2.4rem;
+    line-height: 1.3em;
+    opacity: 0.7;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+
+.site-nav-left {
+    margin: 0 20px 0 -10px;
+}
+
+.site-nav-left a {
+    font-weight: var(--font-heavy);
+    margin-right: 25px;
+    color: var(--theme-dark);
+}
+
+.site-nav-button {
+    display: inline-block;
+    padding: 5px 10px;
+    /* border: #fff 1px solid; */
+    color: var(--theme-dark);
+    font-size: 1.3rem;
+    font-weight: var(--font-heavy);
+    line-height: 1em;
+    border-radius: var(--radius);
+    opacity: 0.7;
+}
+
+.site-nav-button:hover {
+    text-decoration: none;
+}

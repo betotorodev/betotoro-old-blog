@@ -1,0 +1,38 @@
+
+
+/* Footer
+/* ---------------------------------------------------------- */
+
+.site-foot {
+    padding: 20px 0 40px 0;
+    color: var(--theme-dark);
+    font-size: 1.3rem;
+    background: var(--theme-light);
+}
+
+.site-foot-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: var(--font-medium);
+}
+
+.site-foot-nav a {
+    color: var(--theme-dark);
+}
+
+.site-foot-nav a:hover {
+    text-decoration: none;
+    font-weight: var(--font-heavy);
+}
+
+.site-foot-nav-right a {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 2px 5px;
+}
+
+.site-foot-nav-right a:last-child {
+    padding-right: 0;
+}
