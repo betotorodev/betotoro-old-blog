@@ -593,12 +593,18 @@ h6 {
 
 .content-title {
     margin: 0 0 0.8em;
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: var(--font-heavy);
+    color: transparent;
+    -webkit-text-stroke: 1px #383838;
 }
 @media (max-width: 500px) {
     .content-title {
         margin: 0.8em 0;
         font-size: 3.4rem;
+        font-weight: var(--font-heavy);
+        color: transparent;
+        -webkit-text-stroke: 1px #383838;
     }
     .content {
         font-size: 1.8rem;
@@ -803,7 +809,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    padding: 4vw 0;
+    padding: 2vw 0;
 }
 
 /* Index
