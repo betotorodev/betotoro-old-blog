@@ -2,11 +2,11 @@
   "development": {
     "apiUrl": "https://betotorodev.herokuapp.com",
     "contentApiKey": "60afc45caec561e757e0251848",
-    "version": "v2"
+    "version": "v3"
   },
   "production": {
     "apiUrl": "https://betotorodev.herokuapp.com",
     "contentApiKey": "60afc45caec561e757e0251848",
-    "version": "v2"
+    "version": "v3"
   }
 }

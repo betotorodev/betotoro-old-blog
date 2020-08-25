@@ -36,15 +36,15 @@ const Author = ({ data, location, pageContext }) => {
                                 {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
                             </div>
                         </div>
-                        <div className="author-header-image">
+                        {/* <div className="author-header-image">
                             {author.profile_image && <img src={author.profile_image} alt={author.name} />}
-                        </div>
+                        </div> */}
                     </header>
                     <section className="post-feed">
-                        {posts.map(({ node }) => (
+                        {/* {posts.map(({ node }) => (
                             // The tag below includes the markup for each post - components/common/PostCard.js
                             <PostCard key={node.id} post={node} />
-                        ))}
+                        ))} */}
                     </section>
                     <Pagination pageContext={pageContext} />
                 </div>
