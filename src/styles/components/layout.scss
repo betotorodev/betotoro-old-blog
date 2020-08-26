@@ -25,13 +25,20 @@
 .content-body {
     display: flex;
     flex-direction: column;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans-serif2);
 }
 
 .post-full-content {
-    max-width: 720px;
-    margin: 0 auto;
-    background: #fff;
+    // max-width: 720px;
+    // margin: 0 auto;
+    background: transparent;
+}
+
+.post-full-content {
+    h1 {
+        color: var(--theme-dark);
+        -webkit-text-stroke: transparent;
+    }
 }
 
 .post-feature-image img {

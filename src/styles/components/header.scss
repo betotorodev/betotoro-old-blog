@@ -47,17 +47,27 @@
     display: flex;
 }
 
+@media (max-width: 680px) {
+    .site-header-brand {
+        display: block;
+    }
+}
+
 .site-header-brand h1 {
-    margin: 0;
+    margin: 0 44px 0 0;
     font-size: 22px;
     font-weight: var(--font-heavy);
-    color: var(--theme-dark);
 }
 
 .site-header-brand p {
-    margin: 0 0 0 44px;
+    margin: 0;
     font-weight: var(--font-medium);
-    color: var(--theme-dark);
+}
+
+@media (max-width:500px) {
+    .site-header-brand p {
+        display: none;
+    }
 }
 
 .site-mast-right {

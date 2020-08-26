@@ -33,7 +33,7 @@ what's here to work the way you'd like it to.
 
     /* Fonts */
     --font-sans-serif: "Montserrat", sans-serif;
-    --font-serif: Georgia, Times, serif;
+    --font-sans-serif2: "Open Sans", sans-serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;
@@ -473,10 +473,14 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: var(--color-base);
+    color: var(--theme-dark);
     line-height: 1.15;
     font-weight: 700;
     text-rendering: optimizeLegibility;
+}
+
+p {
+    color: var(--theme-dark);
 }
 
 h1 {
