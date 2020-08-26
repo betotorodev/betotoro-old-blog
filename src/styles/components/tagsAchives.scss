@@ -10,6 +10,10 @@
 
 .tag-header h1 {
     margin: 0 0 1rem 0;
+    font-size: 60px;
+    font-weight: var(--font-heavy);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--theme-dark);
 }
 
 .tag-header p {
