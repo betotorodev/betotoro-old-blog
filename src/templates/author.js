@@ -19,22 +19,32 @@ const Author = ({ data, location, pageContext }) => {
 
     return (
         <>
-            <MetaData
-                data={data}
-                location={location}
-                type="profile"
-            />
+            <MetaData data={data} location={location} type="profile" />
             <Layout>
                 <div className="container">
                     <header className="author-header">
                         <div className="author-header-content">
-                            <h1>{author.name}</h1>
-                            {author.bio && <p>{author.bio}</p>}
-                            <div className="author-header-meta">
+                            <h1>Sobre mi</h1>
+                            <section className="author-header-container">
+                                <div className="box author-header-bio">
+                                    {author.bio && <p>{author.bio}</p>}
+                                </div>
+                                <div className="box author-header-photo"></div>
+                                <div className="box author-header-contact">
+                                    <div className="author-header-contact-container">
+                                        <h1>Contacto</h1>
+                                        <h2>Email: betotoro0902@gmail.com</h2>
+                                        <a href="https://www.linkedin.com/in/beto-toro-859b811a6/"><h2>LinkedIn: Beto Toro</h2></a>
+                                        <a href="https://twitter.com/betotorodev"><h2>Twitter: @betotorodev</h2></a>
+                                    </div>
+                                </div>
+                                <div className="box author-header-rock"><h2>🤘🏼</h2></div>
+                            </section>
+                            {/* <div className="author-header-meta">
                                 {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">Website</a>}
                                 {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                 {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
-                            </div>
+                            </div> */}
                         </div>
                         {/* <div className="author-header-image">
                             {author.profile_image && <img src={author.profile_image} alt={author.name} />}
@@ -46,7 +56,7 @@ const Author = ({ data, location, pageContext }) => {
                             <PostCard key={node.id} post={node} />
                         ))} */}
                     </section>
-                    <Pagination pageContext={pageContext} />
+                    {/* <Pagination pageContext={pageContext} /> */}
                 </div>
             </Layout>
         </>
