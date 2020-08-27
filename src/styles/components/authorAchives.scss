@@ -13,7 +13,7 @@
     margin: 0 0 1rem 0;
     font-size: 60px;
     color: transparent;
-    -webkit-text-stroke: 1px #383838;
+    -webkit-text-stroke: 1px var(--brand-secondary);
 }
 
 .author-header-content {
@@ -31,13 +31,13 @@
 }
 
 .box {
-    border: 3px dotted var(--theme-dark);
+    border: 3px dotted var(--brand-secondary);
     background-color: transparent;
     transition: all 150ms;
     &:hover {
-        border: 3px solid var(--theme-dark);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3),
-                    inset 0 10px 10px rgba(0, 0, 0, 0.3);
+        border: 3px solid var(--brand-secondary);
+        box-shadow: 0 10px 10px var(--brand-secondary-shadow),
+                    inset 0 10px 10px var(--brand-secondary-shadow);
     }
 }
 
@@ -51,7 +51,7 @@
         font-size: 3.4rem;
         font-weight: var(--font-heavy);
         line-height: 1.3em;
-        color: var(--theme-dark);
+        color: var(--brand-secondary);
     }
 }
 
@@ -72,18 +72,18 @@
     h1 {
         margin-bottom: 28px;
         -webkit-text-stroke: transparent;
-        color: var(--theme-dark);
+        color: var(--brand-secondary);
     }
     h2 {
         margin-bottom: 20px;
         font-size: 24px;
         font-weight: var(--font-heavy);
-        color: var(--theme-dark);
+        color: var(--brand-secondary);
     }
 }
 
 .author-header-contact-container a:hover {
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
     text-decoration: underline;
 }
 

@@ -5,9 +5,9 @@
 
 .site-foot {
     padding: 20px 0 40px 0;
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
     font-size: 1.3rem;
-    background: var(--theme-light);
+    background: var(--brand-primary);
 }
 
 .site-foot-nav {
@@ -19,7 +19,7 @@
 }
 
 .site-foot-nav a {
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
 }
 
 .site-foot-nav a:hover {
@@ -31,6 +31,8 @@
     display: inline-block;
     margin-left: 25px;
     padding: 2px 5px;
+    font-weight: var(--font-heavy) ;
+    color: var(--brand-secondary);
 }
 
 .site-foot-nav-right a:last-child {

@@ -29,14 +29,12 @@
 }
 
 .post-full-content {
-    // max-width: 720px;
-    // margin: 0 auto;
     background: transparent;
 }
 
 .post-full-content {
     h1 {
-        color: var(--theme-dark);
+        color: var(--brand-secondary);
         -webkit-text-stroke: transparent;
     }
 }
@@ -73,7 +71,7 @@
     font-size: 6rem;
     font-weight: var(--font-heavy);
     color: transparent;
-    -webkit-text-stroke: 1px #383838;
+    -webkit-text-stroke: 1px var(--brand-secondary);
 }
 @media (max-width: 500px) {
     .content-title {
@@ -81,7 +79,7 @@
         font-size: 3.4rem;
         font-weight: var(--font-heavy);
         color: transparent;
-        -webkit-text-stroke: 1px #383838;
+        -webkit-text-stroke: 1px var(--brand-secondary);
     }
     .content {
         font-size: 1.8rem;
@@ -127,7 +125,7 @@
     padding: 1em 0 1.5em;
     border: 0;
     font-family: Georgia,serif;
-    color: var(--color-primary);
+    color: var(--brand-secondary);
     font-style: italic;
     font-size: 3.2rem;
     line-height: 1.35em;

@@ -1,12 +1,12 @@
-
-
 /* Header
 /* ---------------------------------------------------------- */
+
+@import "./globals.scss";
 
 .site-head {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: var(--theme-light);
+    background: var(--brand-primary);
     background-position: center;
     background-size: cover;
 }
@@ -24,6 +24,7 @@
 }
 
 .site-nav-icon {
+    width: 15px;
     height: 15px;
     margin: -5px 0 0;
 }
@@ -40,7 +41,7 @@
 
 .site-mast-left {
     width: 50%;
-    border-bottom: 13px solid var(--theme-dark);
+    border-bottom: 13px solid var(--brand-secondary);
 }
 
 .site-header-brand {
@@ -116,14 +117,13 @@
 .site-nav-left a {
     font-weight: var(--font-heavy);
     margin-right: 25px;
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
 }
 
 .site-nav-button {
     display: inline-block;
     padding: 5px 10px;
-    /* border: #fff 1px solid; */
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
     font-size: 1.3rem;
     font-weight: var(--font-heavy);
     line-height: 1em;
@@ -133,4 +133,66 @@
 
 .site-nav-button:hover {
     text-decoration: none;
+}
+
+.dark-mode {
+    transform: translateX(164px);
+}
+
+.checkbox {
+    display: none;
+}
+.checkbox:checked ~ .switch:before {
+    transform: translatey(-30px);
+    opacity: 0;
+}
+.checkbox:checked ~ .switch:after {
+    transform: translatey(0px);
+    opacity: 1;
+}
+.switch {
+    height: 26px;
+    display: block;
+    // border: 1px solid var(--brand-secondary);
+    width: 79px;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+.switch::before {
+    content: "Light";
+    display: block;
+    /* width: 20px; */
+    /* height: 20px; */
+    padding-right: 2px;
+    /* background: chocolate; */
+    border-radius: 50%;
+    transform: translatey(-4px);
+    transition: 0.3s;
+    will-change: transform;
+    position: relative;
+    color: var(--brand-secondary);
+    font-size: 15px;
+
+}
+
+.switch::after {
+    content: "Dark";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    padding-right: 2px;
+    transform: translatey(30px);
+    transition: 0.3s;
+    will-change: transform;
+    font-size: 15px;
+    color: var(--brand-secondary);
+    opacity: 0;
 }

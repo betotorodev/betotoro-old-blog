@@ -8,6 +8,7 @@ what's here to work the way you'd like it to.
 # Table of Contents
 
 - Vars
+- Themes
 - Reset
 - Defaults
 - Layout
@@ -22,11 +23,11 @@ what's here to work the way you'd like it to.
 :root {
 
     /* Colours */
-    --color-primary: #3eb0ef;
-    --color-base: #15171A;
-    --color-secondary: #5B7A81;
-    --color-border: #c7d5d8;
-    --color-bg: #f5f5f5;
+    // --color-primary: #3eb0ef;
+    // --color-base: #15171A;
+    // --color-secondary: #5B7A81;
+    // --color-border: #c7d5d8;
+    // --color-bg: #f5f5f5;
 
     --theme-light: #E3E3E3;
     --theme-dark: #383838;
@@ -48,6 +49,22 @@ what's here to work the way you'd like it to.
 
 }
 
+
+/* Themes
+/* ---------------------------------------------------------- */
+.dark {
+    --brand-primary: #383838;
+    --brand-secondary: #E3E3E3;
+    --brand-secondary-shadow: rgba(227, 227, 227, 0.5);
+    --switch-content: "☀️";
+}
+
+.light {
+    --brand-primary: #E3E3E3;
+    --brand-secondary: #383838;
+    --brand-secondary-shadow: rgba(56, 56, 56, 0.5);
+    --switch-content: "🌙";
+}
 
 /* Reset
 /* ---------------------------------------------------------- */
@@ -310,9 +327,9 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 62.5%;
-    background: var(--theme-light);
+    background: var(--brand-primary);
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: var(--brand-primary);
 }
 
 body {
@@ -324,7 +341,7 @@ body {
     font-style: normal;
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
-    background: var(--theme-light);
+    background: var(--brand-primary);
 
 
     -webkit-font-smoothing: antialiased;
@@ -335,13 +352,13 @@ body {
 body::-webkit-scrollbar {
     width: 10px;
     border-radius: 10px;
-    background-color: var(--theme-light);
+    background-color: var(--brand-primary);
 }
 
 body::-webkit-scrollbar-thumb {
     width: 10px;
     border-radius: 10px;
-    background-color: var(--theme-dark);
+    background-color: var(--brand-secondary);
 }
 
 ::selection {
@@ -473,14 +490,14 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
     line-height: 1.15;
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
 p {
-    color: var(--theme-dark);
+    color: var(--brand-secondary);
 }
 
 h1 {

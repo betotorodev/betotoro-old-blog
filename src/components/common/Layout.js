@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Navigation } from '.'
+// import config from '../../utils/siteConfig'
 // import config from '../../utils/siteConfig'
 
 // Styles
@@ -19,17 +20,29 @@ import '../../styles/app.scss'
 * styles, and meta data for each page.
 *
 */
-const DefaultLayout = ({ data, children, bodyClass }) => {
+const DefaultLayout = ({ data, children }) => {
+    let websiteTheme
+    if (typeof window !== `undefined`) {
+        websiteTheme = window.__theme
+    }
+    
+    const [theme, setTheme] = useState(websiteTheme)
+    
     const site = data.allGhostSettings.edges[0].node
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
-    // const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
+    useEffect(() => {
+        setTheme(window.__theme)
+        window.__onThemeChange = () => {
+            setTheme(window.__theme)
+        }
+    }, [])
 
     return (
         <>
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                <body className={bodyClass} />
+                <body/>
             </Helmet>
 
             <div className="viewport">
@@ -50,10 +63,30 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
                                         }
                                     </Link>
                                 </div>
+                                <div className="dark-mode">
+                                    <input
+                                        type="checkbox"
+                                        className="checkbox"
+                                        id="checkbox"
+                                        onChange={() => {
+                                            window.__setPreferredTheme(
+                                                theme === `dark`
+                                                    ? `light`
+                                                    : `dark`
+                                            )
+                                        }}
+                                        checked={theme === `light`}
+                                    ></input>
+                                    <label
+                                        className="switch"
+                                        htmlFor="checkbox"
+                                    >
+                                    </label>
+                                </div>
                                 <div className="site-mast-right">
-                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter-dark.png" alt="Beto Toro - Twitter" /></a>}
-                                    <a className="site-nav-item" href="https://www.linkedin.com/in/beto-toro-859b811a6/" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/linkedin-dark.png" alt="Beto Toro - linkedin" /></a>
-                                    <a className="site-nav-item" href="https://github.com/beto-toro" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/github-dark.png" alt="Beto Toro - github" /></a>
+                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src={theme === `light` ? `/images/icons/twitter-dark.png` : `/images/icons/twitter.svg`} alt="Twitter - Beto Toro"/></a>}
+                                    <a className="site-nav-item" href="https://www.linkedin.com/in/beto-toro-859b811a6/" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src={theme === `light` ? `/images/icons/linkedin-dark.png` : `/images/icons/linkedin.svg`} alt="Beto Toro - linkedin" /></a>
+                                    <a className="site-nav-item" href="https://github.com/beto-toro" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src={theme === `light` ? `/images/icons/github-dark.png` : `/images/icons/github.svg`} alt="Beto Toro - github" /></a>
                                 </div>
                             </div>
 
@@ -63,7 +96,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
                                 </div>
                                 <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/author/betotoro">Sobre mi</Link>
+                                    <Link className="site-nav-button" to="/author/betotoro">Sobre mí</Link>
                                 </div>
                             </nav>
                         </div>
