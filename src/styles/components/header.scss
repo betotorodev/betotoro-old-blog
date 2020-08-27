@@ -48,7 +48,7 @@
     display: flex;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 960px) {
     .site-header-brand {
         display: block;
     }
@@ -65,7 +65,7 @@
     font-weight: var(--font-medium);
 }
 
-@media (max-width:500px) {
+@media (max-width:550px) {
     .site-header-brand p {
         display: none;
     }
@@ -136,7 +136,20 @@
 }
 
 .dark-mode {
-    transform: translateX(164px);
+    position: relative;
+    right: -18%;
+}
+
+@media screen and (max-width: 680px) {
+    .dark-mode {
+        right: -12%;
+    }
+}
+
+@media (max-width: 500px) {
+    .dark-mode {
+        right: -8%;
+    }
 }
 
 .checkbox {
