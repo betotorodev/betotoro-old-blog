@@ -24,7 +24,7 @@ const Author = ({ data, location, pageContext }) => {
                 <div className="container">
                     <header className="author-header">
                         <div className="author-header-content">
-                            <h1>Sobre mi</h1>
+                            <h1>Sobre mí</h1>
                             <section className="author-header-container">
                                 <div className="box author-header-bio">
                                     {author.bio && <p>{author.bio}</p>}

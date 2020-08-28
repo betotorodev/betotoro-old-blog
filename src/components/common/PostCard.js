@@ -6,6 +6,7 @@ import { Tags } from '@tryghost/helpers-gatsby'
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
+    const POST = post.tags[0].name
     // const readingTime = readingTimeHelper(post)
     return (
         <Link to={url} className="post-card">
@@ -22,8 +23,7 @@ const PostCard = ({ post }) => {
                 <h2 className="post-card-title">{post.title}</h2>
             </section>
             <footer className="post-card-footer">
-                <div className="post-card-footer-left">
-                    {/* <div className="post-card-avatar">
+                {/* <div className="post-card-avatar">
                         {post.primary_author.profile_image ? (
                             <img
                                 className="author-profile-image"
@@ -38,8 +38,10 @@ const PostCard = ({ post }) => {
                             />
                         )}
                     </div> */}
-                    <span className="post-card-footer-author">By {post.primary_author.name}</span>
-                </div>
+                    
+                <span className="post-card-footer-author">By {post.primary_author.name}</span>
+                <span className="post-card-footer-author">{POST}</span>
+       
                 {/* <div className="post-card-footer-right">
                     <div>{post.created_at_pretty}</div>
                 </div> */}

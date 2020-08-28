@@ -82,11 +82,9 @@
     justify-content: space-between;
     margin: 10px 0 0 0;
     color: var(--color-secondary);
-}
-
-.post-card-footer-left {
-    display: flex;
-    align-items: center;
+    & :nth-last-child(1) {
+        font-weight: var(--font-heavy);
+    }
 }
 
 .post-card-footer-author {
