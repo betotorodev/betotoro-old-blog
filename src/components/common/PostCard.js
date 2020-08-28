@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { Tags } from '@tryghost/helpers-gatsby'
+// import { Tags } from '@tryghost/helpers-gatsby'
 // import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 const PostCard = ({ post }) => {
