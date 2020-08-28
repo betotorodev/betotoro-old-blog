@@ -21,7 +21,7 @@ import '../../styles/app.scss'
 *
 */
 const DefaultLayout = ({ data, children }) => {
-    let websiteTheme
+    let websiteTheme = `light`
     if (typeof window !== `undefined`) {
         websiteTheme = window.__theme
     }

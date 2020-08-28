@@ -44,8 +44,8 @@
 .post-card:hover {
     border: 3px solid var(--brand-secondary);
     text-decoration: none;
-    box-shadow: 0 15px 10px var(--brand-secondary-shadow),
-                inset 0 15px 10px var(--brand-secondary-shadow);
+    box-shadow: 0 0px 20px var(--brand-secondary-shadow),
+                inset 0 0px 20px var(--brand-secondary-shadow);
 }
 
 .post-card-tags {
