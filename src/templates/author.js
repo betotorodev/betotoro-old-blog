@@ -33,7 +33,7 @@ const Author = ({ data, location, pageContext }) => {
                                 <div className="box author-header-contact">
                                     <div className="author-header-contact-container">
                                         <h1>Contacto</h1>
-                                        <h2>Email: betotoro0902@gmail.com</h2>
+                                        {/* <h2>Email: betotoro0902@gmail.com</h2> */}
                                         <a href="https://www.linkedin.com/in/beto-toro-859b811a6/"><h2>LinkedIn: Beto Toro</h2></a>
                                         <a href="https://twitter.com/betotorodev"><h2>Twitter: @betotorodev</h2></a>
                                     </div>
