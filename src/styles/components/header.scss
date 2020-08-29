@@ -42,6 +42,9 @@
 .site-mast-left {
     width: 50%;
     border-bottom: 13px solid var(--brand-secondary);
+    a {
+        text-decoration: none;
+    }
 }
 
 .site-header-brand {
