@@ -63,6 +63,12 @@
     transform: translateY(-20px);
 }
 
+@media (max-width: 375px) {
+    .post-card-title {
+        font-size: 35px;
+    }
+}
+
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
