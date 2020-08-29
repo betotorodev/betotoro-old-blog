@@ -480,7 +480,9 @@ blockquote cite a {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: var(--brand-secondary);
+    font-weight: var(--font-heavy);
 }
 
 h1,
