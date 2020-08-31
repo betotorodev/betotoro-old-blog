@@ -6,8 +6,8 @@ Un blog sobre frontend en el que compartiré mis aprendizajes en este camino del
 
 &nbsp;
 
-![gatsby-starter-ghost](./static/images/Diseño_base-ligth.png)
-![gatsby-starter-ghost](./static/images/Diseño_base-dark.png)
+![gatsby-starter-ghost](static/images/Diseño_base-ligth.png)
+![gatsby-starter-ghost](static/images/Diseño_base-dark.png)
 
 &nbsp;
 
