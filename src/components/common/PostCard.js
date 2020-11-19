@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
-    const POST = post.tags[0].name
+    const POST = post?.tags[0]?.name
     // const readingTime = readingTimeHelper(post)
     return (
         <Link to={url} className="post-card">
