@@ -21,7 +21,6 @@ what's here to work the way you'd like it to.
 /* ---------------------------------------------------------- */
 
 :root {
-
     /* Colours */
     // --color-primary: #3eb0ef;
     // --color-base: #15171A;
@@ -29,7 +28,7 @@ what's here to work the way you'd like it to.
     // --color-border: #c7d5d8;
     // --color-bg: #f5f5f5;
 
-    --theme-light: #E3E3E3;
+    --theme-light: #e3e3e3;
     --theme-dark: #383838;
 
     /* Fonts */
@@ -46,21 +45,19 @@ what's here to work the way you'd like it to.
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.6rem;
-
 }
-
 
 /* Themes
 /* ---------------------------------------------------------- */
 .dark {
     --brand-primary: #383838;
-    --brand-secondary: #E3E3E3;
+    --brand-secondary: #e3e3e3;
     --brand-secondary-shadow: rgba(227, 227, 227, 0.5);
     --switch-content: "☀️";
 }
 
 .light {
-    --brand-primary: #E3E3E3;
+    --brand-primary: #e3e3e3;
     --brand-secondary: #383838;
     --brand-secondary-shadow: rgba(56, 56, 56, 0.5);
     --switch-content: "🌙";
@@ -163,6 +160,7 @@ body {
 ol,
 ul {
     list-style: none;
+    color: var(--brand-secondary);
 }
 blockquote,
 q {
@@ -342,7 +340,6 @@ body {
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
     background: var(--brand-primary);
-
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
